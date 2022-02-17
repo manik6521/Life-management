@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="container">
+        <section class="w-9/12 m-auto">
+            <h2 class="text-center text-3xl font-semibold py-9">Life management</h2>
+
+            <div class="row">
+                <div class="col-6 col-md-6 col-sm-12">
+                    <div class="mt-5">
+                        <img class="img-fluid img-thumbnail" src="images.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-sm-12 bg-light
+                 my-2 p-3 ">
+                    <!-- income Part -->
+                    <div class="income-part m-auto mb-10">
+                        <h4 class="text-center">Income: </h4>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Income</span>
+                            <input id="income-value" type="text" class="form-control" aria-label="Sizing example input"
+                                placeholder="Enter your manthly Income" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                    </div>
+
+                    <!-- income Part -->
+                    <div class="income-part m-auto mb-10">
+                        <h4 class="text-center">Expenses: </h4>
+                        <!-- food -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Food</span>
+                            <input type="text" id="food-input"
+                            class="form-control" aria-label="Sizing example input"
+                                placeholder="Enter your manthly food cost" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <!--  -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Rent</span>
+                            <input type="text" class="form-control" id="rent-input" aria-label="Sizing example input"
+                                placeholder="Enter your manthly rent cost" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <!-- clothesa part -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Clothes</span>
+                            <input type="text" class="form-control" id="clothes-input"aria-label="Sizing example input"
+                                placeholder="Enter your manthly Clothes cost"
+                                aria-describedby="inputGroup-sizing-default">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button id="calculate" class="btn btn-primary" type="button">Calculate</button>
+
+                        </div>
+
+                        <p class="text-center mt-3">Total Expenses: <span id="cost-value">00</span></p>
+
+                        <p class="text-center mt-3">Balance: <span id="balance-cost-value">00</span></p>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Save:</span>
+                            <input id="save-maney" type="text" class="form-control" placeholder="amount" aria-label="Username">
+                            <span class="input-group-text">%</span>
+                            <button id="save-btn" class="btn btn-primary px-5 btn-lg">save</button>
+                        </div>
+                        <p class="text-center mt-3">Saving Amount: <span id="saving-value"> </span></p>
+                        <p class="text-center mt-3">Remaining Balance: <span id="Remaining-value"></span></p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
